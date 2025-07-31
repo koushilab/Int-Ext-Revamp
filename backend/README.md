@@ -1,12 +1,12 @@
-# Houzz Professionals Extractor
+# Int Professionals Extractor
 
-A comprehensive Python script to extract professional contact information from Houzz.in across multiple categories including interior designers, civil engineers, contractors, and more.
+A comprehensive Python script to extract professional contact information from Int.in across multiple categories including interior designers, civil engineers, contractors, and more.
 
 ## Features
 
 - ✅ **8 Professional Categories**: Interior designers, civil engineers, design-build firms, kitchen & bath designers, landscape contractors, tile & stone professionals, furniture dealers, and flooring specialists
 - ✅ **Complete Contact Data**: Name, phone, address, coordinates, social media links, websites
-- ✅ **Smart Pagination**: Uses Houzz's `fi` parameter to extract all available professionals
+- ✅ **Smart Pagination**: Uses Int's `fi` parameter to extract all available professionals
 - ✅ **Dual Output**: Saves data in both CSV and JSON formats
 - ✅ **Anti-Bottleneck**: No cookie storage and proper rate limiting
 - ✅ **Error Handling**: Continues extraction even if individual pages fail
@@ -18,19 +18,19 @@ A comprehensive Python script to extract professional contact information from H
 #### Windows:
 ```bash
 # Create virtual environment
-python -m venv houzz_env
+python -m venv Int_env
 
 # Activate virtual environment
-houzz_env\Scripts\activate
+Int_env\Scripts\activate
 ```
 
 #### macOS/Linux:
 ```bash
 # Create virtual environment
-python3 -m venv houzz_env
+python3 -m venv Int_env
 
 # Activate virtual environment
-source houzz_env/bin/activate
+source Int_env/bin/activate
 ```
 
 ### 2. Install Dependencies
@@ -44,7 +44,7 @@ pip install -r requirements.txt
 
 ```bash
 # Extract all professional categories
-python extract_all_houzz_professionals.py
+python extract_all_Int_professionals.py
 ```
 
 ## Dependencies
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 The script creates the following directory structure:
 
 ```
-houzz_data/
+Int_data/
 └── professionals/
     ├── interior-designers-and-decorators.csv
     ├── interior-designers-and-decorators.json
@@ -107,7 +107,7 @@ Each CSV file contains the following columns:
 | `twitter` | Twitter profile URL | "https://twitter.com/abc_designs" |
 | `linkedin` | LinkedIn profile URL | "https://linkedin.com/company/abc" |
 | `website` | Company website | "https://abcdesigns.com" |
-| `houzz_profile` | Houzz profile URL | "https://houzz.in/pro/abc-designs" |
+| `Int_profile` | Int profile URL | "https://Int.in/pro/abc-designs" |
 | `category` | Professional category | "interior-designers" |
 
 ## Extracted Categories
@@ -127,7 +127,7 @@ The script extracts professionals from these 8 categories:
 
 ### Extract All Categories (Default)
 ```bash
-python extract_all_houzz_professionals.py
+python extract_all_Int_professionals.py
 ```
 
 ### Extract Specific Categories
@@ -168,8 +168,8 @@ Typical extraction yields:
 1. **ModuleNotFoundError**: Make sure virtual environment is activated and dependencies installed
    ```bash
    # Activate environment first
-   houzz_env\Scripts\activate  # Windows
-   source houzz_env/bin/activate  # macOS/Linux
+   Int_env\Scripts\activate  # Windows
+   source Int_env/bin/activate  # macOS/Linux
    
    # Then install dependencies
    pip install -r requirements.txt
@@ -199,7 +199,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(levelname)s: %(message)s')
 
 This tool is designed for legitimate business research and lead generation. Please ensure you:
 
-- ✅ Respect Houzz's terms of service
+- ✅ Respect Int's terms of service
 - ✅ Use extracted data responsibly
 - ✅ Don't overwhelm their servers (built-in rate limiting helps)
 - ✅ Comply with local data protection laws (GDPR, CCPA, etc.)
